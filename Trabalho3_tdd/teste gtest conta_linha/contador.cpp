@@ -132,6 +132,7 @@ int conta_final(ifstream& arq) {
     cout << "Todas linhas comentadas : " << val_comment <<endl;
     int total = val_total -(val_branco + val_comment);
     cout << "Total de linhas uteis : "  << total << endl;
+    return total;
 }
 
 int fecha_arquivo(ifstream& arq) {

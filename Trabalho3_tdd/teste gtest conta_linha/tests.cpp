@@ -35,6 +35,13 @@ TEST(cont_comentario, contando2) {
       ASSERT_EQ(5, conta_linhas_branco(t3));
       ASSERT_EQ(7, conta_comments(t3));
 }
+TEST(cont_final, cont_sem_branco_coment) { 
+      ASSERT_EQ(23, conta_final(t0));
+      ASSERT_EQ(28, conta_final(t1));
+      ASSERT_EQ(47, conta_final(t2));
+      ASSERT_EQ(30, conta_final(t3));
+}
+
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
