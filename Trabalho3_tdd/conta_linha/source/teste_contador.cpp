@@ -6,7 +6,12 @@
 #include "../include/contador.hpp"
 
 int main() {
-ifstream t0, t1, t2;
+ifstream t0, t1, t2, erro;
+    cout << "------- Erros -----------\n\n" << endl;
+    abrir_arquivo("xx.cpp",erro);
+    conta_total_linhas(erro);
+    conta_linhas_branco(erro);
+    conta_comments(erro);
     cout << "------- Exemplo24Stack -----------\n\n" << endl;
     abrir_arquivo("Exemplo24Stack.cpp", t0);
     conta_total_linhas(t0);

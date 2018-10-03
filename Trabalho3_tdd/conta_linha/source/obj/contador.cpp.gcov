@@ -1,0 +1,398 @@
+        -:    0:Source:contador.cpp
+        -:    0:Graph:contador.gcno
+        -:    0:Data:contador.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*EOF*/
+        -:    2:/*EOF*/
+        -:    3:/*EOF*/
+        -:    4:/*EOF*/
+        -:    5:/*EOF*/
+        -:    6:/*EOF*/
+        -:    7:/*EOF*/
+function _Z13abrir_arquivoNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt14basic_ifstreamIcS2_E called 4 returned 100% blocks executed 90%
+        4:    8:/*EOF*/
+        4:    9:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        8:   10:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 never executed
+        4:   11:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 25% (fallthrough)
+branch  4 taken 75%
+        1:   12:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        1:   13:/*EOF*/
+        -:   14:/*EOF*/
+        3:   15:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        3:   16:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        3:   17:/*EOF*/
+        -:   18:/*EOF*/
+        -:   19:/*EOF*/
+function _Z18conta_total_linhasRSt14basic_ifstreamIcSt11char_traitsIcEE called 7 returned 100% blocks executed 88%
+        7:   20:/*EOF*/
+       14:   21:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 never executed
+        7:   22:/*EOF*/
+        7:   23:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 14% (fallthrough)
+branch  4 taken 86%
+        1:   24:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        1:   25:/*EOF*/
+        -:   26:/*EOF*/
+      510:   27:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 98% (fallthrough)
+branch  7 taken 2%
+      252:   28:/*EOF*/
+        -:   29:/*EOF*/
+        -:   30:/*EOF*/
+        6:   31:/*EOF*/
+        -:   32:/*EOF*/
+        -:   33:/*EOF*/
+function _Z19conta_linhas_brancoRSt14basic_ifstreamIcSt11char_traitsIcEE called 7 returned 100% blocks executed 89%
+        7:   34:/*EOF*/
+        7:   35:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        7:   36:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+       14:   37:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 never executed
+        7:   38:/*EOF*/
+        7:   39:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 14% (fallthrough)
+branch  4 taken 86%
+        1:   40:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        1:   41:/*EOF*/
+        -:   42:/*EOF*/
+        6:   43:/*EOF*/
+      510:   44:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 98% (fallthrough)
+branch  7 taken 2%
+      252:   45:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 9% (fallthrough)
+branch  4 taken 91%
+        -:   46:/*EOF*/
+       22:   47:/*EOF*/
+      230:   48:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+        -:   49:/*EOF*/
+    #####:   50:/*EOF*/
+        -:   51:/*EOF*/
+        -:   52:/*EOF*/
+        -:   53:/*EOF*/
+        -:   54:/*EOF*/
+        6:   55:/*EOF*/
+        -:   56:/*EOF*/
+        -:   57:/*EOF*/
+function _Z8eh_vazioPKc called 230 returned 100% blocks executed 86%
+      850:   58:/*EOF*/
+     1470:   59:/*EOF*/
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      850:   60:/*EOF*/
+branch  0 taken 27% (fallthrough)
+branch  1 taken 73%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+      230:   61:/*EOF*/
+      620:   62:/*EOF*/
+        -:   63:/*EOF*/
+    #####:   64:/*EOF*/
+        -:   65:/*EOF*/
+function _Z19nao_eh_vazio_indicePKc called 252 returned 100% blocks executed 100%
+      252:   66:/*EOF*/
+      252:   67:/*EOF*/
+     1492:   68:/*EOF*/
+branch  0 taken 97% (fallthrough)
+branch  1 taken 3%
+      850:   69:/*EOF*/
+branch  0 taken 27% (fallthrough)
+branch  1 taken 73%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+      230:   70:/*EOF*/
+        -:   71:/*EOF*/
+      620:   72:/*EOF*/
+      620:   73:/*EOF*/
+        -:   74:/*EOF*/
+       22:   75:/*EOF*/
+        -:   76:/*EOF*/
+        -:   77:/*EOF*/
+        -:   78:/*EOF*/
+        -:   79:/*EOF*/
+function _Z14conta_commentsRSt14basic_ifstreamIcSt11char_traitsIcEE called 7 returned 100% blocks executed 55%
+        7:   80:/*EOF*/
+        7:   81:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        7:   82:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+       14:   83:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 never executed
+        7:   84:/*EOF*/
+        7:   85:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 14% (fallthrough)
+branch  4 taken 86%
+        1:   86:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+        1:   87:/*EOF*/
+        -:   88:/*EOF*/
+      510:   89:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 98% (fallthrough)
+branch  7 taken 2%
+      252:   90:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+        -:   91:/*EOF*/
+      252:   92:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+        -:   93:/*EOF*/
+      230:   94:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 15% (fallthrough)
+branch  4 taken 85%
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0%
+branch 10 taken 15% (fallthrough)
+branch 11 taken 85%
+        -:   95:/*EOF*/
+       34:   96:/*EOF*/
+        -:   97:/*EOF*/
+      230:   98:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 15% (fallthrough)
+branch  4 taken 85%
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
+branch  8 taken 0% (fallthrough)
+branch  9 taken 100%
+branch 10 taken 0% (fallthrough)
+branch 11 taken 100%
+        -:   99:/*EOF*/
+    #####:  100:/*EOF*/
+    #####:  101:/*EOF*/
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+    #####:  102:/*EOF*/
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+    #####:  103:/*EOF*/
+branch  0 never executed
+branch  1 never executed
+    #####:  104:/*EOF*/
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:  105:/*EOF*/
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+    #####:  106:/*EOF*/
+        -:  107:/*EOF*/
+    #####:  108:/*EOF*/
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+    #####:  109:/*EOF*/
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  110:/*EOF*/
+        -:  111:/*EOF*/
+    #####:  112:/*EOF*/
+        -:  113:/*EOF*/
+        -:  114:/*EOF*/
+        -:  115:/*EOF*/
+        -:  116:/*EOF*/
+        -:  117:/*EOF*/
+        -:  118:/*EOF*/
+        -:  119:/*EOF*/
+        6:  120:/*EOF*/
+        -:  121:/*EOF*/
+        -:  122:/*EOF*/
+function _Z11conta_finalRSt14basic_ifstreamIcSt11char_traitsIcEE called 3 returned 100% blocks executed 100%
+        3:  123:/*EOF*/
+        3:  124:/*EOF*/
+call    0 returned 100%
+        3:  125:/*EOF*/
+call    0 returned 100%
+        -:  126:/*EOF*/
+        3:  127:/*EOF*/
+call    0 returned 100%
+        3:  128:/*EOF*/
+call    0 returned 100%
+        3:  129:/*EOF*/
+call    0 returned 100%
+        3:  130:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+        3:  131:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+        3:  132:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+        3:  133:/*EOF*/
+        3:  134:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+        3:  135:/*EOF*/
+        -:  136:/*EOF*/
+        -:  137:/*EOF*/
+function _Z13fecha_arquivoRSt14basic_ifstreamIcSt11char_traitsIcEE called 3 returned 100% blocks executed 100%
+        3:  138:/*EOF*/
+        3:  139:/*EOF*/
+call    0 returned 100%
+function _GLOBAL__sub_I__Z13abrir_arquivoNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt14basic_ifstreamIcS2_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        6:  140:/*EOF*/
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0%
