@@ -3,7 +3,7 @@
 * @file contador.cpp
 * @brief Arquivo com as funcoes implementdas
 */
-#include "../include/contador.hpp"
+#include "contador.hpp"
 
 int abrir_arquivo(string nome_arq, ifstream& arq) {
     cout << nome_arq << endl;
@@ -57,7 +57,7 @@ int conta_linhas_branco(ifstream& arq) {
 
 int eh_vazio(const char *st) {
       while (*st) {
-    if (!isspace(*st) && *st != '/t')
+    if (!isspace(*st) && *st != '\t')
       return 0;
     st++;
   }
@@ -68,10 +68,10 @@ int nao_eh_vazio_indice(const char *st) {
     while (*st) {
          if (!isspace(*st) && *st != '\t') {
             return indice;
+            }
             st++;
             indice++;
-        }
-    }
+         }
   return -1;
 }
 
@@ -86,13 +86,13 @@ int conta_comments(ifstream& arq) {
         cout << "Arquivo nao esta aberto"<< endl;
         return 0;
     }
-    int i = 0;
     while (getline(arq, texto_linha)) {
     int indice = nao_eh_vazio_indice(texto_linha.c_str());
+    // cout << indice << endl;
     if (indice != -1) {
     // cout << texto_linha[indice]<< texto_linha[indice + 1] << endl;
     if (texto_linha[indice] == '/' && texto_linha[indice+1] == '/') {
-        // cout << "Comentario detectado " << texto_linha <<endl;
+       // cout << "Comentario detectado " << texto_linha <<endl;
         linha_comments++;
     }
     if (texto_linha[indice] == '/' && texto_linha[indice+1] == '*') {
@@ -104,11 +104,11 @@ int conta_comments(ifstream& arq) {
                     if (!(texto_linha[indice+1] == '/' &&
                                                 texto_linha[indice] == '*')) {
                         linha_comments++;
-                          // cout << "Comentario detectado"<<texto_linha<<endl;
+                         // cout << "Comentario detectado"<<texto_linha<<endl;
                     } else if (texto_linha[indice+1] == '/' &&
                                               texto_linha[indice] == '*') {
                         linha_comments++;
-                          // cout << "Comentario detectado "<<texto_linha<<endl;
+                        // cout << "Comentario detectado "<<texto_linha<<endl;
                         break;
                     }
                 }
@@ -116,7 +116,7 @@ int conta_comments(ifstream& arq) {
     }
     }
     }
-    cout << "comentadods " <<linha_comments << endl;
+    // cout << "comentadods " <<linha_comments << endl;
     return linha_comments;
 }
 
