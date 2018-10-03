@@ -3,8 +3,8 @@
 * @file contador.hpp
 * @brief Arquivo com as funcoes que sao usadas para implementar as funcoes da pilha que foram solicitada no trabalho.
 */
-#ifndef CONTADOR_HPP
-#define CONTADOR_HPP
+#ifndef TRABALHO3_TDD_CONTA_LINHA_INCLUDE_CONTADOR_HPP_
+#define TRABALHO3_TDD_CONTA_LINHA_INCLUDE_CONTADOR_HPP_
 // includes
 #include <iostream>
 #include <fstream>
@@ -21,4 +21,4 @@ int nao_eh_vazio_indice(const char *st);
 int conta_comments(ifstream& arq);
 int conta_final(ifstream& arq);
 int fecha_arquivo(ifstream& arq);
-#endif  // _HOME_MTONIN_DOCUMENTS_TRABALHO1_MARCOSTONIN_2_LISTA_INCLUDE_PILHA_H_
+#endif  // TRABALHO3_TDD_CONTA_LINHA_INCLUDE_CONTADOR_HPP_
