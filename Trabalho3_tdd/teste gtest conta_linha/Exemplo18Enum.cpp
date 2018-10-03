@@ -33,6 +33,10 @@ int main()
         default:
             cout << "Dia de importancia questionavel.\n";
     }
-
+/*
+ teste de comentario multiplas linhas
+sdadasfa 
+hahhaah
+*/
 	return 0;
 }
