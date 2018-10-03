@@ -1,7 +1,7 @@
 // Copyrigth 2018 <Copyright Mtonin>
 /**
 * @file contador.cpp
-* @brief Arquivo com as funcoes implementdas
+* @brief Arquivo com as funcoes implementadas para resolver problema referente a contar numeros de linhas de um programa
 */
 #include "contador.hpp"
 
@@ -137,4 +137,5 @@ int conta_final(ifstream& arq) {
 
 int fecha_arquivo(ifstream& arq) {
   arq.close();
+  return 1;
 }

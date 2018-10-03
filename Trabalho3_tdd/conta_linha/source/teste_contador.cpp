@@ -1,12 +1,13 @@
 // Copyrigth 2018 <Copyright Mtonin>
 /**
 * @file contador.cpp
-* @brief Arquivo com os testes feitos no contador de arquivo.
+* @brief Arquivo com os testes feitos no arquivo contador.cpp e sua respectiva biblioteca. 
 */
 #include "../include/contador.hpp"
 
 int main() {
 ifstream t0, t1, t2, erro;
+    // Exemplos para dar erro
     cout << "------- Erros -----------\n\n" << endl;
     abrir_arquivo("xx.cpp",erro);
     conta_total_linhas(erro);
