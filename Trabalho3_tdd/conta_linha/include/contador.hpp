@@ -6,13 +6,14 @@
 #ifndef CONTADOR_HPP
 #define CONTADOR_HPP
 // includes
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+#include <cstring>
+using namespace std;
 
-
-
-
+int abrir_arquivo(string nome_arq, ifstream& arq);
 
 #endif  // _HOME_MTONIN_DOCUMENTS_TRABALHO1_MARCOSTONIN_2_LISTA_INCLUDE_PILHA_H_
 
