@@ -1,6 +1,6 @@
 IDIR =../include
 CC=gcc
-CFLAGS= -ftest-coverage -fprofile-arcs -I$(IDIR) 
+CFLAGS=-I$(IDIR)
 
 ODIR=obj
 LDIR =../lib
@@ -10,17 +10,18 @@ LIBS=-lm
 _DEPS = contador.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = teste_contador.o contador.o 
+_OBJ = contador.o teste_contador.o 
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 
-$(ODIR)/%.o: %.c $(DEPS)
+$(ODIR)/%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-teste_pilha: $(OBJ)
+teste_contador: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 .PHONY: clean
 
 clean:
 	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+
