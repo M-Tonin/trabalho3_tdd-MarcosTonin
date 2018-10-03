@@ -15,6 +15,6 @@ using namespace std;
 
 int abrir_arquivo(string nome_arq, ifstream& arq);
 int conta_total_linhas(ifstream& arq);
-
+int conta_linhas_branco(ifstream& arq);
+int eh_vazio(const char *st);
 #endif  // _HOME_MTONIN_DOCUMENTS_TRABALHO1_MARCOSTONIN_2_LISTA_INCLUDE_PILHA_H_
-
