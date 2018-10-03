@@ -1,0 +1,3 @@
+/home/mtonin/Documents/teste gtest/CMakeFiles/edit_cache.dir
+/home/mtonin/Documents/teste gtest/CMakeFiles/rebuild_cache.dir
+/home/mtonin/Documents/teste gtest/CMakeFiles/runTests.dir

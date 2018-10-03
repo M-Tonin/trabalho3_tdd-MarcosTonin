@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mtonin/Documents/teste gtest/pilha.c
+pilha.h
+/home/mtonin/Documents/teste gtest/pilha.h
+
+/home/mtonin/Documents/teste gtest/pilha.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/mtonin/Documents/teste gtest/tests.cpp
+pilha.c
+/home/mtonin/Documents/teste gtest/pilha.c
+gtest/gtest.h
+-
+
