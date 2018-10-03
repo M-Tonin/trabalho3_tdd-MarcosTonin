@@ -17,4 +17,18 @@ int abrir_arquivo(string nome_arq,ifstream& arq) {
 		return 1;
 	}	 
 	
+	int conta_total_linhas(ifstream& arq) {
+    string texto_linha;
+    int num_lin=0;
+    if(!arq.is_open()) {
+    	cout << "Arquivo nao esta aberto"<< endl;
+    	return 0;
+	}	
+	while(getline(arq,texto_linha)) {
+		num_lin++;
+		}
+	cout << "arqq " << num_lin << endl;
+	return num_lin;
+}
+
 }
