@@ -18,12 +18,17 @@ TEST(cont_total, contando) {
       ASSERT_EQ(33, conta_total_linhas(t1));
 	  ASSERT_EQ(64, conta_total_linhas(t2));
 }
-TEST(cont_total, contando) { 
+TEST(cont_total, contando_branco) { 
       ASSERT_EQ(3, conta_linhas_branco(t0));	
       ASSERT_EQ(2, conta_linhas_branco(t1));
 	  ASSERT_EQ(6, conta_linhas_branco(t2));
 }
 
+TEST(cont_total, contando_com) { 
+      ASSERT_EQ(3, conta_comments(t0));	
+      ASSERT_EQ(2, conta_comments(t1));
+	  ASSERT_EQ(11, conta_comments(t2));
+}
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
