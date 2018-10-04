@@ -1,0 +1,336 @@
+.TH "contador.hpp" 3 "Wed Oct 3 2018" "Trabalho 3 tdd" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+contador.hpp \- Arquivo com as funcoes que sao usadas para implementar as funcoes que contaram o numero de linhas\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <cstring>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBabrir_arquivo\fP (string nome_arq, ifstream &arq)"
+.br
+.RI "Funcao que abri o arquivo de nome 'nome_arq' e retorna em arq seu ponteiro\&. "
+.ti -1c
+.RI "int \fBconta_total_linhas\fP (ifstream &arq)"
+.br
+.RI "Conta o numero total de linhas do arquivo\&. "
+.ti -1c
+.RI "int \fBconta_linhas_branco\fP (ifstream &arq)"
+.br
+.RI "Conta o numero total de linhas em branco\&. "
+.ti -1c
+.RI "int \fBeh_vazio\fP (const char *st)"
+.br
+.RI "Dado uma linha verifica se eh vazia ou se nao eh\&. "
+.ti -1c
+.RI "int \fBnao_eh_vazio_indice\fP (const char *st)"
+.br
+.RI "Dado uma linha verifica qual o primeiro char que nao eh nulo '' ou tab\&. "
+.ti -1c
+.RI "int \fBconta_comments\fP (ifstream &arq)"
+.br
+.RI "Conta o numero total de linhas que sao comentadas\&. "
+.ti -1c
+.RI "int \fBconta_final\fP (ifstream &arq)"
+.br
+.RI "Calcula o numero de linhas realmente usadas\&. "
+.ti -1c
+.RI "int \fBfecha_arquivo\fP (ifstream &arq)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Arquivo com as funcoes que sao usadas para implementar as funcoes que contaram o numero de linhas\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "int abrir_arquivo (string nome_arq, ifstream & arq)"
+
+.PP
+Funcao que abri o arquivo de nome 'nome_arq' e retorna em arq seu ponteiro\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInome_arq\fP -> String contendo o nome do arquivo 
+.br
+\fIarq\fP Representa o tipo stream que sera retornado 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna um se deu certo e zero caso de errado 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas -- dado pelos clientes: 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+nome_arq != NULL (correspondendo a um nome de arquivo) 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+arq != NULL, deve estar preparado para receber ponteiro, deve ser do tipo correto 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - dado pelo Servidor: 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+se criado arq com sucesso - retorno 1 
+.PP
+se deu erro - retorno 0 
+.RE
+.PP
+
+.SS "int conta_comments (ifstream & arq)"
+
+.PP
+Conta o numero total de linhas que sao comentadas\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarq\fP Representa o tipo stream que sera usado 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna o total de linhas que foram comentadas do arquivo em questao 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas - pelo Clientes: 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+arq != NULL, referente ao arq atual, devendo ser do certo 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - pelo Servidor : 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Se deu erro retorna zero ou 
+.PP
+Ou o numero de linhas comentadas 
+.RE
+.PP
+
+.SS "int conta_final (ifstream & arq)"
+
+.PP
+Calcula o numero de linhas realmente usadas\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarq\fP Representa o tipo stream que sera usado 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna o total de linhas realmente uteis 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas - pelos clientes : 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+arq != NULL, referente ao arq atual devendo ser do tipo certo 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - pelo Servidor: 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Retorna total - comentada - branco 
+.RE
+.PP
+
+.SS "int conta_linhas_branco (ifstream & arq)"
+
+.PP
+Conta o numero total de linhas em branco\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarq\fP Representa o tipo stream que sera usado 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna o total de linhas em branco do arquivo em questao 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas - pelos clientes : 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+arq != NULL, referente ao arq atual, deve ser do mesmo tipo 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - pelo Servidor : 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Se deu erro retorna zero ou 
+.PP
+Ou o numero de linhas totais em branco 
+.RE
+.PP
+
+.SS "int conta_total_linhas (ifstream & arq)"
+
+.PP
+Conta o numero total de linhas do arquivo\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarq\fP Representa o tipo stream que sera usado 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna o total de linhas do arquivo em questao 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas - dado pelos Clientes: 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+arq != NULL e do tipo correto, referente ao arq atual 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - dado pelo Servidor: 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Se deu erro retorna zero ou 
+.PP
+Ou o numero de linhas totais 
+.RE
+.PP
+
+.SS "int eh_vazio (const char * st)"
+
+.PP
+Dado uma linha verifica se eh vazia ou se nao eh\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI*st\fP -> string que contem a linha toda 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas - pelos clientes: 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+1: linha esta vazia 'em branco' e 0: nao esta em branco 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+st != NULL, a string deve existir 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - pelo Servidor: 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+Se so houver espaco ou tab retorna 1, ou 
+.PP
+retorna 1 caso contrario 
+.RE
+.PP
+
+.SS "int nao_eh_vazio_indice (const char * st)"
+
+.PP
+Dado uma linha verifica qual o primeiro char que nao eh nulo '' ou tab\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI*st\fP -> string que contem a linha toda 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+-1 caso nao seja encontrada, ou retorna o indice que foi encontrado algum char 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertivas entradas - pelos Clientes: 
+.RE
+.PP
+\fBPrecondition:\fP
+.RS 4
+st != NULL, a string deve existir e deve ser string 
+.RE
+.PP
+\fBAttention:\fP
+.RS 4
+Assertiva Saida - pelo Servidor: 
+.RE
+.PP
+\fBPostcondition:\fP
+.RS 4
+retorna -1 caso nao tenha, ou 
+.PP
+retorna o indice do primeiro elemento diferente de tab ou espaco 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trabalho 3 tdd from the source code\&.

@@ -1,0 +1,267 @@
+\hypertarget{contador_8hpp}{}\section{contador.\+hpp File Reference}
+\label{contador_8hpp}\index{contador.\+hpp@{contador.\+hpp}}
+
+
+Arquivo com as funcoes que sao usadas para implementar as funcoes que contaram o numero de linhas.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{contador_8hpp_ad76d2ac4a72d4a175aec586698dd85eb}{abrir\+\_\+arquivo}} (string nome\+\_\+arq, ifstream \&arq)
+\begin{DoxyCompactList}\small\item\em Funcao que abri o arquivo de nome \char`\"{}nome\+\_\+arq\char`\"{} e retorna em arq seu ponteiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{contador_8hpp_a0a02b35cd70ca01cd820c46b5849f0a9}{conta\+\_\+total\+\_\+linhas}} (ifstream \&arq)
+\begin{DoxyCompactList}\small\item\em Conta o numero total de linhas do arquivo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{contador_8hpp_ac1248faa05aff2c71908cd02c75e4ff3}{conta\+\_\+linhas\+\_\+branco}} (ifstream \&arq)
+\begin{DoxyCompactList}\small\item\em Conta o numero total de linhas em branco. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{contador_8hpp_ad1f35d1eb0258895af7c9eb8665674f3}{eh\+\_\+vazio}} (const char $\ast$st)
+\begin{DoxyCompactList}\small\item\em Dado uma linha verifica se eh vazia ou se nao eh. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{contador_8hpp_a8a94a298433eea69c488631392ccb4c0}{nao\+\_\+eh\+\_\+vazio\+\_\+indice}} (const char $\ast$st)
+\begin{DoxyCompactList}\small\item\em Dado uma linha verifica qual o primeiro char que nao eh nulo \char`\"{}\char`\"{} ou tab. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{contador_8hpp_a84ce4d32ca0d93d8dfd508e378375069}{conta\+\_\+comments}} (ifstream \&arq)
+\begin{DoxyCompactList}\small\item\em Conta o numero total de linhas que sao comentadas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{contador_8hpp_a72fba664d7bfff8914f8e38a0035b489}{conta\+\_\+final}} (ifstream \&arq)
+\begin{DoxyCompactList}\small\item\em Calcula o numero de linhas realmente usadas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{contador_8hpp_a126ec769942ad90f884431d194197ea2}\label{contador_8hpp_a126ec769942ad90f884431d194197ea2}} 
+int {\bfseries fecha\+\_\+arquivo} (ifstream \&arq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Arquivo com as funcoes que sao usadas para implementar as funcoes que contaram o numero de linhas. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{contador_8hpp_ad76d2ac4a72d4a175aec586698dd85eb}\label{contador_8hpp_ad76d2ac4a72d4a175aec586698dd85eb}} 
+\index{contador.\+hpp@{contador.\+hpp}!abrir\+\_\+arquivo@{abrir\+\_\+arquivo}}
+\index{abrir\+\_\+arquivo@{abrir\+\_\+arquivo}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{abrir\+\_\+arquivo()}{abrir\_arquivo()}}
+{\footnotesize\ttfamily int abrir\+\_\+arquivo (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+arq,  }\item[{ifstream \&}]{arq }\end{DoxyParamCaption})}
+
+
+
+Funcao que abri o arquivo de nome \char`\"{}nome\+\_\+arq\char`\"{} e retorna em arq seu ponteiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+\_\+arq} & -\/$>$ String contendo o nome do arquivo \\
+\hline
+{\em arq} & Representa o tipo stream que sera retornado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna um se deu certo e zero caso de errado 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -- dado pelos clientes\+: 
+\end{DoxyAttention}
+\begin{DoxyPrecond}{Precondition}
+nome\+\_\+arq != N\+U\+LL (correspondendo a um nome de arquivo) 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+arq != N\+U\+LL, deve estar preparado para receber ponteiro, deve ser do tipo correto 
+\end{DoxyPostcond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ dado pelo Servidor\+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+se criado arq com sucesso -\/ retorno 1 
+
+se deu erro -\/ retorno 0 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{contador_8hpp_a84ce4d32ca0d93d8dfd508e378375069}\label{contador_8hpp_a84ce4d32ca0d93d8dfd508e378375069}} 
+\index{contador.\+hpp@{contador.\+hpp}!conta\+\_\+comments@{conta\+\_\+comments}}
+\index{conta\+\_\+comments@{conta\+\_\+comments}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{conta\+\_\+comments()}{conta\_comments()}}
+{\footnotesize\ttfamily int conta\+\_\+comments (\begin{DoxyParamCaption}\item[{ifstream \&}]{arq }\end{DoxyParamCaption})}
+
+
+
+Conta o numero total de linhas que sao comentadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arq} & Representa o tipo stream que sera usado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o total de linhas que foram comentadas do arquivo em questao 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -\/ pelo Clientes\+: 
+\end{DoxyAttention}
+\begin{DoxyPrecond}{Precondition}
+arq != N\+U\+LL, referente ao arq atual, devendo ser do certo 
+\end{DoxyPrecond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ pelo Servidor \+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+Se deu erro retorna zero ou 
+
+Ou o numero de linhas comentadas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{contador_8hpp_a72fba664d7bfff8914f8e38a0035b489}\label{contador_8hpp_a72fba664d7bfff8914f8e38a0035b489}} 
+\index{contador.\+hpp@{contador.\+hpp}!conta\+\_\+final@{conta\+\_\+final}}
+\index{conta\+\_\+final@{conta\+\_\+final}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{conta\+\_\+final()}{conta\_final()}}
+{\footnotesize\ttfamily int conta\+\_\+final (\begin{DoxyParamCaption}\item[{ifstream \&}]{arq }\end{DoxyParamCaption})}
+
+
+
+Calcula o numero de linhas realmente usadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arq} & Representa o tipo stream que sera usado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o total de linhas realmente uteis 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -\/ pelos clientes \+: 
+\end{DoxyAttention}
+\begin{DoxyPrecond}{Precondition}
+arq != N\+U\+LL, referente ao arq atual devendo ser do tipo certo 
+\end{DoxyPrecond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ pelo Servidor\+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+Retorna total -\/ comentada -\/ branco 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{contador_8hpp_ac1248faa05aff2c71908cd02c75e4ff3}\label{contador_8hpp_ac1248faa05aff2c71908cd02c75e4ff3}} 
+\index{contador.\+hpp@{contador.\+hpp}!conta\+\_\+linhas\+\_\+branco@{conta\+\_\+linhas\+\_\+branco}}
+\index{conta\+\_\+linhas\+\_\+branco@{conta\+\_\+linhas\+\_\+branco}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{conta\+\_\+linhas\+\_\+branco()}{conta\_linhas\_branco()}}
+{\footnotesize\ttfamily int conta\+\_\+linhas\+\_\+branco (\begin{DoxyParamCaption}\item[{ifstream \&}]{arq }\end{DoxyParamCaption})}
+
+
+
+Conta o numero total de linhas em branco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arq} & Representa o tipo stream que sera usado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o total de linhas em branco do arquivo em questao 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -\/ pelos clientes \+: 
+\end{DoxyAttention}
+\begin{DoxyPrecond}{Precondition}
+arq != N\+U\+LL, referente ao arq atual, deve ser do mesmo tipo 
+\end{DoxyPrecond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ pelo Servidor \+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+Se deu erro retorna zero ou 
+
+Ou o numero de linhas totais em branco 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{contador_8hpp_a0a02b35cd70ca01cd820c46b5849f0a9}\label{contador_8hpp_a0a02b35cd70ca01cd820c46b5849f0a9}} 
+\index{contador.\+hpp@{contador.\+hpp}!conta\+\_\+total\+\_\+linhas@{conta\+\_\+total\+\_\+linhas}}
+\index{conta\+\_\+total\+\_\+linhas@{conta\+\_\+total\+\_\+linhas}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{conta\+\_\+total\+\_\+linhas()}{conta\_total\_linhas()}}
+{\footnotesize\ttfamily int conta\+\_\+total\+\_\+linhas (\begin{DoxyParamCaption}\item[{ifstream \&}]{arq }\end{DoxyParamCaption})}
+
+
+
+Conta o numero total de linhas do arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arq} & Representa o tipo stream que sera usado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o total de linhas do arquivo em questao 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -\/ dado pelos Clientes\+: 
+\end{DoxyAttention}
+\begin{DoxyPrecond}{Precondition}
+arq != N\+U\+LL e do tipo correto, referente ao arq atual 
+\end{DoxyPrecond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ dado pelo Servidor\+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+Se deu erro retorna zero ou 
+
+Ou o numero de linhas totais 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{contador_8hpp_ad1f35d1eb0258895af7c9eb8665674f3}\label{contador_8hpp_ad1f35d1eb0258895af7c9eb8665674f3}} 
+\index{contador.\+hpp@{contador.\+hpp}!eh\+\_\+vazio@{eh\+\_\+vazio}}
+\index{eh\+\_\+vazio@{eh\+\_\+vazio}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{eh\+\_\+vazio()}{eh\_vazio()}}
+{\footnotesize\ttfamily int eh\+\_\+vazio (\begin{DoxyParamCaption}\item[{const char $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Dado uma linha verifica se eh vazia ou se nao eh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$st} & -\/$>$ string que contem a linha toda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -\/ pelos clientes\+: 
+\end{DoxyAttention}
+\begin{DoxyReturn}{Returns}
+1\+: linha esta vazia \char`\"{}em branco\char`\"{} e 0\+: nao esta em branco 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+st != N\+U\+LL, a string deve existir 
+\end{DoxyPrecond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ pelo Servidor\+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+Se so houver espaco ou tab retorna 1, ou 
+
+retorna 1 caso contrario 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{contador_8hpp_a8a94a298433eea69c488631392ccb4c0}\label{contador_8hpp_a8a94a298433eea69c488631392ccb4c0}} 
+\index{contador.\+hpp@{contador.\+hpp}!nao\+\_\+eh\+\_\+vazio\+\_\+indice@{nao\+\_\+eh\+\_\+vazio\+\_\+indice}}
+\index{nao\+\_\+eh\+\_\+vazio\+\_\+indice@{nao\+\_\+eh\+\_\+vazio\+\_\+indice}!contador.\+hpp@{contador.\+hpp}}
+\subsubsection{\texorpdfstring{nao\+\_\+eh\+\_\+vazio\+\_\+indice()}{nao\_eh\_vazio\_indice()}}
+{\footnotesize\ttfamily int nao\+\_\+eh\+\_\+vazio\+\_\+indice (\begin{DoxyParamCaption}\item[{const char $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Dado uma linha verifica qual o primeiro char que nao eh nulo \char`\"{}\char`\"{} ou tab. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$st} & -\/$>$ string que contem a linha toda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 caso nao seja encontrada, ou retorna o indice que foi encontrado algum char 
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Assertivas entradas -\/ pelos Clientes\+: 
+\end{DoxyAttention}
+\begin{DoxyPrecond}{Precondition}
+st != N\+U\+LL, a string deve existir e deve ser string 
+\end{DoxyPrecond}
+\begin{DoxyAttention}{Attention}
+Assertiva Saida -\/ pelo Servidor\+: 
+\end{DoxyAttention}
+\begin{DoxyPostcond}{Postcondition}
+retorna -\/1 caso nao tenha, ou 
+
+retorna o indice do primeiro elemento diferente de tab ou espaco 
+\end{DoxyPostcond}

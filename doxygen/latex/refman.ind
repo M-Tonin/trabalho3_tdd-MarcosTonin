@@ -1,0 +1,50 @@
+\begin{theindex}
+
+  \item {abrir\+\_\+arquivo}
+    \subitem {contador.\+cpp}, \hyperpage{4}
+    \subitem {contador.\+hpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {conta\+\_\+comments}
+    \subitem {contador.\+cpp}, \hyperpage{4}
+    \subitem {contador.\+hpp}, \hyperpage{10}
+  \item {conta\+\_\+final}
+    \subitem {contador.\+cpp}, \hyperpage{5}
+    \subitem {contador.\+hpp}, \hyperpage{11}
+  \item {conta\+\_\+linhas\+\_\+branco}
+    \subitem {contador.\+cpp}, \hyperpage{6}
+    \subitem {contador.\+hpp}, \hyperpage{11}
+  \item {conta\+\_\+total\+\_\+linhas}
+    \subitem {contador.\+cpp}, \hyperpage{6}
+    \subitem {contador.\+hpp}, \hyperpage{12}
+  \item {contador.\+cpp}, \hyperpage{3}
+    \subitem {abrir\+\_\+arquivo}, \hyperpage{4}
+    \subitem {conta\+\_\+comments}, \hyperpage{4}
+    \subitem {conta\+\_\+final}, \hyperpage{5}
+    \subitem {conta\+\_\+linhas\+\_\+branco}, \hyperpage{6}
+    \subitem {conta\+\_\+total\+\_\+linhas}, \hyperpage{6}
+    \subitem {eh\+\_\+vazio}, \hyperpage{7}
+    \subitem {nao\+\_\+eh\+\_\+vazio\+\_\+indice}, \hyperpage{8}
+  \item {contador.\+hpp}, \hyperpage{9}
+    \subitem {abrir\+\_\+arquivo}, \hyperpage{9}
+    \subitem {conta\+\_\+comments}, \hyperpage{10}
+    \subitem {conta\+\_\+final}, \hyperpage{11}
+    \subitem {conta\+\_\+linhas\+\_\+branco}, \hyperpage{11}
+    \subitem {conta\+\_\+total\+\_\+linhas}, \hyperpage{12}
+    \subitem {eh\+\_\+vazio}, \hyperpage{13}
+    \subitem {nao\+\_\+eh\+\_\+vazio\+\_\+indice}, \hyperpage{13}
+
+  \indexspace
+
+  \item {eh\+\_\+vazio}
+    \subitem {contador.\+cpp}, \hyperpage{7}
+    \subitem {contador.\+hpp}, \hyperpage{13}
+
+  \indexspace
+
+  \item {nao\+\_\+eh\+\_\+vazio\+\_\+indice}
+    \subitem {contador.\+cpp}, \hyperpage{8}
+    \subitem {contador.\+hpp}, \hyperpage{13}
+
+\end{theindex}
